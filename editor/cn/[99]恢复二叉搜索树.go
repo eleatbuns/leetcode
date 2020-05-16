@@ -58,7 +58,7 @@ package main
  * }
  */
 func recoverTree(root *TreeNode) {
-	if root == nil  {
+	if root == nil   {
 		return
 	}
 	recoverTree(root.Left)
@@ -69,7 +69,6 @@ func recoverTree(root *TreeNode) {
 		root.Right.Val, root.Val = root.Val, root.Right.Val
 	}
 	recoverTree(root.Right)
-
 }
 
 //leetcode submit region end(Prohibit modification and deletion)
